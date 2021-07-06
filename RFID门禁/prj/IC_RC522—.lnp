@@ -1,0 +1,12 @@
+"STARTUP.obj",
+".\beep.obj",
+".\ctrl.obj",
+".\EEPROM.obj",
+".\key.obj",
+".\lcd12864.obj",
+".\main.obj",
+".\rc522.obj",
+".\timer.obj",
+".\uart.obj" 
+TO "IC_RC522¡ª" 
+RAMSIZE(256) 
