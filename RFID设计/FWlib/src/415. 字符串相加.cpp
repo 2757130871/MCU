@@ -10,6 +10,7 @@
 class Solution {
 public:
 
+    //交换两个字符
     void swap(char& c1, char& c2)
     {
         char tmp = c1;
@@ -41,7 +42,8 @@ public:
             end1--;
             end2--;
         }
-
+        
+        //当num1 比 num2 长 处理剩下数
         while (end1 >= begin1)
         {
             int tmp = num1[end1] - '0' + carry;
@@ -59,7 +61,8 @@ public:
 
             end1--;
         }
-
+        
+        //当num2 比 num1 长 处理剩下数
         while (end2 >= begin2)
         {
             int tmp = num2[end2] - '0' + carry;
@@ -78,6 +81,7 @@ public:
             end2--;
         }
 
+        //注意最后可能有进位
         if(carry)
             str += '1';
       
